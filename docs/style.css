@@ -335,9 +335,8 @@ nav {
     color: #dc2626;
 }
 
-#kontakt p {
-    font-size: 1.1rem;
-    margin-top: 10px;
+.project-link i {
+    font-size: 0.75rem;
 }
 
 /* Footer */
