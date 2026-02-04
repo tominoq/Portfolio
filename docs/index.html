@@ -8,122 +8,46 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Ahoj, jsem Tomáš</h1>
+        <p>Rád se pouštím do nových věcí a mám rád výzvy. Chtěl bych se naučit co nejvíce a zdokonalovat své schopnosti.</p>
+        <p>Od malička mě fascinují technologie a programování jsem objevil díky kroužku již na základní škole. 
+            Tvoření mě nadchlo a od té doby rád sleduji dopady své práce a hledám chyby v kódu.
+            Nejvíce mě baví práce s C# a tvorba webových stránek pomocí HTML/CSS, ale jsem otevřený novým programovacím jazykům a nástrojům.         
+            Zkušenosti získávám jak ve škole, tak na vlastních projektech, kde se snažím neustále zlepšovat a zkoušet nové věci. </p>
+    </header>
+    <main>
+        <section id="projekty">
+            <h2>Moje projekty</h2>
+             <article>
+                <h3>Webové stránky zdravotního poskytovatele (html,css, xml, xsl, xsd)</h3>
+                <p>Projekt vytvořený v rámci školního zadání, určený k vyzkoušení xml, xslt, xsd a transformace, xml soubory nejdou kvůli bezpečnosti prohlížečů zobrazit bez nástrojů jako XML viewer nebo serveru.</p>
 
-    <div class="bg-blur">
-        <div class="blur-circle blur-1"></div>
-        <div class="blur-circle blur-2"></div>
-    </div>
+                <p  id= "datum" >Duben 2025</p>
+                <a href="https://github.com/tominoq/ZNAK" target="_blank">&rarr; Odkaz &larr;</a>
+            </article>
+            <article>
+                <h3>Cheese clicking game</h3>
+                <p>Jednoduchá klikací hra sestavená pomocí .NET MAUI. Hlavní inspirace byly hry jako Cookie clicker, obsahuje i jednoduché achievementy. Projekt zveřejněn na Github o dost později, už jako hotový.</p>
 
-    <nav id="mainNav">
-        <div class="nav-container">
-            <div class="nav-content">
-                <div class="nav-links">
-                    <a href="#home" class="nav-link">Domov</a>
-                    <a href="#projekty" class="nav-link">Projekty</a>
-                    <a href="#kontakt" class="nav-link">Kontakt</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+                <p  id= "datum" >Květen 2025</p>
+                <a href="https://github.com/tominoq/ClickTheCheese" target="_blank">&rarr; Odkaz &larr;</a>
+            </article>
+            <article>
+                <h3>Projekt CrawDash</h3>
+                <p>Puzzle hra v herním enginu Godot, s ručně kreslenými assety</p>
 
-    <section id="home">
-        <h1>
-            Ahoj, jsem <span class="gradient-text">Tomáš</span>
-        </h1>
-        
-        <p class="intro-text">
-            Rád se pouštím do nových věcí a mám rád výzvy. Chtěl bych se naučit co nejvíce a zdokonalovat své schopnosti.
-        </p>
-
-        <div class="scroll-arrow">
-            <a href="#projekty">
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
-
-    <section id="projekty">
-        <div class="container">
-            <div class="section-header">
-                <h2>Moje projekty</h2>
-                <p>
-                    Samozřejmně mám za sebou více předchozích projektů, ale zde mám ty hlavní, které jsem také zveřejnil na svůj GitHub.
-                </p>
-            </div>
-
-            <div class="projects-grid">
-                
-                <article class="project-card">
-                    <div class="project-screenshot">
-                        <img src="screenshots/ZNAK2.png" alt="ZNAK Screenshot" onerror="this.style.display='none'">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-icon red">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <span class="project-date">Duben 2025</span>
-                        <h3>Webové stránky zdravotního poskytovatele</h3>
-                        <p>Týmový projekt vytvořený v rámci školního zadání, určený k vyzkoušení xml, xslt, xsd a transformace. XML soubory nejdou kvůli bezpečnosti prohlížečů zobrazit bez nástrojů jako XML viewer nebo serveru.</p>
-                        <a href="https://github.com/tominoq/ZNAK" target="_blank" class="project-link">
-                            Github odkaz <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-screenshot">
-                        <img src="screenshots/Cheese2.png" alt="Click the Cheese Screenshot" onerror="this.style.display='none'">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-icon yellow">
-                            <i class="fa-solid fa-computer-mouse"></i>
-                        </div>
-                        <span class="project-date">Květen 2025</span>
-                        <h3>Cheese clicking game</h3>
-                        <p>Jednoduchá klikací hra sestavená pomocí .NET MAUI. Hlavní inspirace byly hry jako Cookie clicker, obsahuje i jednoduché achievementy. Projekt zveřejněn na Github o dost později, už jako hotový.</p>
-                        <a href="https://github.com/tominoq/ClickTheCheese" target="_blank" class="project-link">
-                            Github odkaz <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="project-card wip">
-                    <div class="wip-badge">WIP</div>
-                    <div class="project-screenshot">
-                        <img src="screenshots/CrawDash2.png" alt="CrawDash Screenshot" onerror="this.style.display='none'">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-icon blue">
-                            <i class="fa-solid fa-gamepad"></i>
-                        </div>
-                        <span class="project-date">Listopad 2025</span>
-                        <h3>Projekt CrawDash</h3>
-                        <p>Puzzle hra v herním enginu Godot, s ručně kreslenými assety.</p>
-                        <a href="https://github.com/tominoq/CrawDash" target="_blank" class="project-link">
-                            Github odkaz <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <footer id="kontakt">
-        <div class="footer-container">
+                <p  id= "datum" >Listopad 2025 - Unfinished</p>
+                <a href="https://github.com/tominoq/CrawDash" target="_blank">&rarr; Odkaz &larr;</a>
+            </article>
+        </section>
+        <section id="kontakt">
             <h2>Kontakt</h2>
-            
-            <div class="footer-links">
-                <a href="https://github.com/tominoq" target="_blank" class="footer-link">
-                    <i class="fa-brands fa-github"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/tomaskusq/" target="_blank" class="footer-link">
-                    <i class="fa-brands fa-linkedin"></i> LinkedIn
-                </a>
-            </div>
-
-            <p class="copyright">© 2025</p>
-        </div>
+            <p>E-mail: kustomas03@gmail.com</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025</p>
     </footer>
 
     <script>
